@@ -162,7 +162,7 @@ try:
         except:
             golfmat = vtext
         ################################ write SPORTS raw data on a file
-        #                   set the path for SPORT raw data
+        # set the path for SPORT raw data
         psportsraw = home + homename + ptemp + 'wasportsraw.txt'
         fo = open(psportsraw, 'w')
         #                   football data
@@ -267,6 +267,7 @@ try:
         for i in range(0, anum):
                 # block control
             rowcount = 1 + sportsblock * i
+            #                 write conky syntax for sports
             rowfstadium.append(rowcolor2 + rowfont7 + "Stadium: " + rowcolor + "${execpi 600 sed -n '" + str(rowcount) + "p' " + psportsclean + "}")
             rowcount = rowcount + 1
             rowfcountry.append(rowcolor2 + "Country: " + rowcolor + "${execpi 600 sed -n '" + str(rowcount) + "p' " + psportsclean + "}")
@@ -302,8 +303,7 @@ try:
             rowgstart.append(rowcolor2 + "Start: " + rowcolor + "${execpi 600 sed -n '" + str(rowcount) + "p' " + psportsclean + "}")
             rowcount = rowcount + 1
             rowgmatch.append(rowcolor2 + "Match: " + rowcolor + "${execpi 600 sed -n '" + str(rowcount) + "p' " + psportsclean + "}")
-        #                 write conky syntax for sports
-        #                   set the path for SPORT conky syntax
+        #set the path for SPORT conky syntax
         psportsc = home + homename + ptemp + 'sportsconky.txt'
         fo = open(psportsc, 'w')
         fo.write('{}\n'.format(rowheadinga))
