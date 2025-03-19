@@ -24,8 +24,9 @@ Run the file `.conkyrc_wasports` from terminal (the first time you run this conk
 
 ## Screenshot
 
-![](https://github.com/TheHeadlessOfficial/weather_alertsWA/blob/main/.conky/docs/screenshot.png)<br>
-The image shows 3 alerts.
+![](https://github.com/TheHeadlessOfficial/sportsWA/blob/main/.conky/docs/screenshot.png)<br>
+I don't know if this service works for every city in the world, just try for yours.<br>
+I guess it works better for Anglo-Saxon countries.
 
 <br>
 <br>
